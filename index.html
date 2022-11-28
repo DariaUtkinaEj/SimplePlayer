@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <link href="https://fonts.googleapis.com/css?family=K2D:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row no-gutters">
+        <div class="player col-8 offset-2">
+            <div class="row">
+                <div class="title col-12">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div id="songTitle" class="col-12">Demo</div>
+            </div>
+            <div id="buttons" class="row panel no-gutters">
+                <div class="col-1">
+                    <button id="pre" onclick="pre()"><i class="fas fa-step-backward"></i></button>
+                </div>
+                <div class="col-1">
+                    <button id="play" onclick="playOrPauseSong()"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="col-1">
+                    <button id="next" onclick="next()"><i class="fas fa-step-forward"></i></button>
+                </div>
+                <div class="col-1 time-start">
+                    <span id="timeStart">00:00</span>
+                </div>
+                <div id="seek-bar" class="col-6">
+                    <div id="fill"></div>
+                    <!-- <div id="handle"></div> -->
+                </div>
+                <div class="col-1 time-end">
+                    <span id="timeEnd">00:00</span>
+                </div>
+                <div class="col-1 volume">
+                    <button id="volume" onclick="vol()"><i class="fas fa-volume-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>
