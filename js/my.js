@@ -1,4 +1,4 @@
-var songs = ["Migos_Narcos.mp3","Lil_Peep_White_Girl.mp3","Lil_Dude_Feelings.mp3"];
+var songs = ["Imagine_Dragons_Thunder.mp3","Migos_Narcos.mp3","Lil_Peep_White_Girl.mp3","Lil_Dude_Feelings.mp3", "Imagine_Dragons_Radioactive.mp3"];
 
 var songTitle = document.getElementById("songTitle");
 var fillBar = document.getElementById("fill");
@@ -54,7 +54,7 @@ song.addEventListener('timeupdate',function(){
 function next(){
 
     currentSong++;
-    if(currentSong > 2){
+    if(currentSong > 4){
         currentSong = 0;
     }
     playSong();
